@@ -1,0 +1,10 @@
+measure,color,bartype,direction,format,left,ticks,annClass,max
+ct vs us,colorByLoc,bar,vertical,dollar,80,7,text-right,normal
+all workers by sex,colorBySex,clusterbar,vertical,dollar,80,5,text-left,normal
+all workers by sex and edu,colorBySex,clusterbar,vertical,dollar,80,5,text-left,normal
+worker type,colorByType,bar,horizontal,percent,80,5,text-left,fill
+full time by sex,colorBySex,clusterbar,vertical,dollar,80,5,text-left,normal
+full-time income by occupation,colorBySex,point,horizontal,dollar,240,5,text-left,normal
+all workers by race and sex,colorBySex,clusterbar,vertical,dollar,80,5,text-left,normal
+full time by race and sex,colorBySex,clusterbar,vertical,dollar,80,7,text-left,normal
+wage equality,colorBySex,clusterbar,vertical,dollar,80,5,text-left,normal

@@ -1,0 +1,52 @@
+.Chart {
+    font-family: 'Fira Sans';
+}
+
+.Chart svg {
+    font-family: 'Fira Sans Condensed';
+}
+
+.Chart text.annotation {
+    text-anchor: start !important;
+    transform: translate(0.2rem, -1.5rem);
+    font-weight: 600;
+}
+
+.Chart path.tick-line {
+    stroke: #ccc;
+}
+
+.Chart div.chart-title {
+    height: 72px;
+}
+
+.Chart .chart-title h3,
+.Chart .chart-title h4 {
+    font-weight: 300;
+}
+
+.Chart .chart-title .fat-skinny {
+    font-weight: 600;
+    font-size: 1.1em;
+    font-family: 'Fira Sans Condensed';
+}
+
+.tooltip-content {
+ background: white;
+ border: 1px solid black;
+ color: black;
+ padding: 10px;
+ z-index: 99;
+ min-width: 120px;
+}
+
+.tooltip-content:before {
+ background: white;
+ content: '';
+ padding: 0px;
+ transform: rotate(45deg);
+ width: 15px;
+ height: 15px;
+ position: absolute;
+ z-index: 99;
+}
