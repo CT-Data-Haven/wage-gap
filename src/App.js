@@ -45,21 +45,28 @@ class App extends Component {
                             />
                         </Col>
                         <Col sm={8}>
-                            <div><AutoAffix autoWidth={false} className="Affix" id="affix">
-                                <div><Chart
-                                    data={this.props.data[this.state.step].values}
-                                    meta={this.props.meta[this.state.step]}
-                                    style={this.props.style}
-                                    titles={titles[this.state.step]}
-                                /></div>
-                            </AutoAffix></div>
+                            {/* <Col sm={12}> */}
+                                <AutoAffix autoWidth={true} className="Affix" id="affix" container={this}>
+                                    <div>
+                                        <Chart
+                                            data={this.props.data[this.state.step].values}
+                                            meta={this.props.meta[this.state.step]}
+                                            style={this.props.style}
+                                            titles={titles[this.state.step]}
+                                        />
+                                    </div>
+                                </AutoAffix>
+                            {/* </Col> */}
                         </Col>
                     </Row>
                 </Grid>
-                <footer>
-                    <p>Source: DataHaven analysis (2017) of US Census Bureau American Community Survey 2015 5-year estimates.</p>
-                    <p><a href="http://www.ctdatahaven.org/">ctdatahaven.org</a></p>
-                </footer>
+                <Grid>
+                    <footer>
+                        <p>Source: DataHaven analysis (2017) of US Census Bureau American Community Survey 2015 5-year estimates.</p>
+                        <p><a href="http://www.ctdatahaven.org/">ctdatahaven.org</a></p>
+                    </footer>
+                </Grid>
+
             </div>
         );
     }
