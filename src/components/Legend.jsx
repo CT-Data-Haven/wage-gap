@@ -31,9 +31,11 @@ export default class Legend extends React.Component {
 
     render() {
         return (
-            <svg className="Legend" ref="svg">
-                <g className="legend" />
-            </svg>
+            <div className="Legend">
+                <svg ref="svg">
+                    <g className="legend" />
+                </svg>
+            </div>
         );
     }
 }

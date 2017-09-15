@@ -2,11 +2,13 @@
   "name": "scroll-sem",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://camille-s.github.io/wage-gap",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "d3": "^4.10.2",
     "d3-svg-annotation": "^2.0.0",
     "d3-svg-legend": "^2.24.1",
+    "d3-tip": "^0.7.1",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",

@@ -4,9 +4,20 @@ import * as _ from 'underscore';
 import { ResponsiveORFrame } from 'semiotic';
 import { annotationBadge } from 'd3-svg-annotation';
 import Legend from './Legend';
+import Tooltip from './Tooltip';
 import '../styles/Chart.css';
 
 export default class Chart extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            hoverVal: '',
+            hoverGrp: '',
+            isHovering: false
+        };
+    }
+
+
     makeColorScale(colortype) {
         let domain = this.props.style[colortype].labels;
         let range = this.props.style[colortype].colors;
@@ -17,6 +28,22 @@ export default class Chart extends React.Component {
             .range(range);
         return [ color, hasLegend ];
     }
+
+    hover = (e) => {
+        if (e === undefined) {
+            this.setState({
+                hoverVal: '',
+                hoverGrp: '',
+                isHovering: false
+            });
+        } else {
+            this.setState({
+                hoverVal: e._orFV,
+                hoverGrp: e.z,
+                isHovering: true
+            });
+        }
+    };
 
     render() {
         let first = this.props.data[0];
@@ -63,6 +90,8 @@ export default class Chart extends React.Component {
         let margin = this.props.style.margin;
         margin.left = meta.left;
 
+
+
         return (
             <div className="Chart">
                 <div className="chart-title">
@@ -86,14 +115,21 @@ export default class Chart extends React.Component {
                     oLabel={true}
                     axis={axis}
                     annotations={annotations}
-                    // pieceHoverAnnotation={true}
-                    hoverAnnotation={true}
-                    // tooltipContent={ d => <p>{d.x}</p> }
+                    // pieceClass={'bar'}
+                    customHoverBehavior={this.hover}
+                    pieceHoverAnnotation={true}
+                    // hoverAnnotation={true}
+                    // tooltipContent={ d => 'tip' }
 
                     // pieceClass={ d => d.class }
                 />
                 <Legend color={color} hasLegend={hasLegend} />
-
+                {/* <Tooltip
+                    val={this.state.hoverVal}
+                    name={this.state.hoverGrp}
+                    format={format}
+                    isHovering={this.state.isHovering}
+                /> */}
             </div>
         );
     }

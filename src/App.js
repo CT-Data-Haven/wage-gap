@@ -36,26 +36,30 @@ class App extends Component {
         return (
             <div className="App">
                 <Grid className="padded-grid">
-                    <h1>The many wage gaps in Connecticut</h1>
+                    <h1 className="title">The many wage gaps in Connecticut</h1>
                     <Row>
-                        <Col sm={5}>
+                        <Col sm={4}>
                             <Text
                                 text={text}
                                 onChange={this.getStep}
                             />
                         </Col>
-                        <Col sm={7}>
-                            <AutoAffix autoWidth={false} className="Affix" id="affix">
+                        <Col sm={8}>
+                            <div><AutoAffix autoWidth={false} className="Affix" id="affix">
                                 <div><Chart
                                     data={this.props.data[this.state.step].values}
                                     meta={this.props.meta[this.state.step]}
                                     style={this.props.style}
                                     titles={titles[this.state.step]}
                                 /></div>
-                            </AutoAffix>
+                            </AutoAffix></div>
                         </Col>
                     </Row>
                 </Grid>
+                <footer>
+                    <p>Source: DataHaven analysis (2017) of US Census Bureau American Community Survey 2015 5-year estimates.</p>
+                    <p><a href="http://www.ctdatahaven.org/">ctdatahaven.org</a></p>
+                </footer>
             </div>
         );
     }
