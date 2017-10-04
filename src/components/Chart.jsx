@@ -1,23 +1,12 @@
 import React from 'react';
 import * as d3 from 'd3';
 import * as _ from 'underscore';
-import { ResponsiveORFrame } from 'semiotic';
-import { annotationBadge } from 'd3-svg-annotation';
+import { ORFrame } from 'semiotic';
 import Legend from './Legend';
-import Tooltip from './Tooltip';
 import '../styles/Chart.css';
 
 export default class Chart extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            hoverVal: '',
-            hoverGrp: '',
-            isHovering: false
-        };
-    }
-
-
+    
     makeColorScale(colortype) {
         let domain = this.props.style[colortype].labels;
         let range = this.props.style[colortype].colors;
@@ -29,24 +18,9 @@ export default class Chart extends React.Component {
         return [ color, hasLegend ];
     }
 
-    hover = (e) => {
-        if (e === undefined) {
-            this.setState({
-                hoverVal: '',
-                hoverGrp: '',
-                isHovering: false
-            });
-        } else {
-            this.setState({
-                hoverVal: e._orFV,
-                hoverGrp: e.z,
-                isHovering: true
-            });
-        }
-    };
+
 
     render() {
-        let first = this.props.data[0];
         // meta
         let meta = this.props.meta;
         meta.left = +meta.left;
@@ -56,28 +30,18 @@ export default class Chart extends React.Component {
         let type = meta.bartype === 'point' ? { type: 'point', r: 8 } : meta.bartype;
         let direction = meta.direction;
         let orientation = meta.direction === 'vertical' ? 'left' : 'bottom';
-        // let annotations = _.pluck(this.props.data, 'display');
-        // console.log(annotations);
-        // format
-        let formStr = meta.format === 'dollar' ? '$,' : '.0%';
-        let format = d3.format(formStr);
-        let annotations = _.filter(this.props.data, (d) => d.label.length > 0);
-        annotations.forEach((d) => {
-            d.type = 'or';
-        });
 
-        // let annotations = _.map(this.props.data, (d) => {
-        //     console.log(d);
-        //     return {
-        //         type: 'or',
-        //         x: d.x, y: d.y, group: d.z, dx: 20, dy: -20,
-        //         note: { label: d.label },
-        //         className: 'annot'
-        //     }
-        // });
-        this.props.data.forEach((d) => {
-            d.class = d.label.length ? `${d.x}-${d.z}`.replace(' ', '-').toLowerCase() : 'no-label';
-        });
+        let formStr = meta.format === 'dollar' ? '$.2s' : '.0%';
+        let format = d3.format(formStr);
+
+        let annotations = _.chain(this.props.data)
+            .filter((d) => d.label.length > 0)
+            .each((d) => {
+                d.type = 'or';
+                d.className = meta.annClass;
+            })
+            .value();
+
 
         let axis = {
             orient: orientation,
@@ -90,22 +54,20 @@ export default class Chart extends React.Component {
         let margin = this.props.style.margin;
         margin.left = meta.left;
 
-
-
         return (
             <div className="Chart">
                 <div className="chart-title">
                     <h3>{this.props.titles.chartH1}</h3>
-                    {/* <h4>{this.props.titles.chartH2}</h4> */}
                     <h5 className="fat-skinny">{this.props.titles.chartH3}</h5>
                 </div>
-                <ResponsiveORFrame
-                    size={this.props.style.size}
+                <ORFrame
+                    size={this.props.size}
                     responsiveWidth={true}
+                    responsiveHeight={true}
                     data={this.props.data}
                     type={type}
                     projection={direction}
-                    oPadding={50}
+                    oPadding={20}
                     oAccessor={'x'}
                     rAccessor={'y'}
                     rExtent={[0, max]}
@@ -115,21 +77,9 @@ export default class Chart extends React.Component {
                     oLabel={true}
                     axis={axis}
                     annotations={annotations}
-                    // pieceClass={'bar'}
-                    customHoverBehavior={this.hover}
-                    pieceHoverAnnotation={true}
-                    // hoverAnnotation={true}
-                    // tooltipContent={ d => 'tip' }
 
-                    // pieceClass={ d => d.class }
                 />
                 <Legend color={color} hasLegend={hasLegend} />
-                {/* <Tooltip
-                    val={this.state.hoverVal}
-                    name={this.state.hoverGrp}
-                    format={format}
-                    isHovering={this.state.isHovering}
-                /> */}
             </div>
         );
     }

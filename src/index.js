@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { queue, csv, nest, json } from 'd3';
-import * as _ from 'underscore';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const style = {
-    size: [600, 450],
-    margin: { left: 10, top: 20, bottom: 40, right: 20 },
+    // size: [600, 400],
+    height: 320,
+    margin: { left: 10, top: 15, bottom: 30, right: 15 },
     colorBySex: {
         colors: [ '#2555a8', '#d83a7c' ],
         labels: [ 'Men', 'Women' ],

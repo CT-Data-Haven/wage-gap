@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oBAAqB;EACjB,MAAM,EAAE,QAAQ;;AAGpB,MAAO;EACH,UAAU,EAAE,MAAM",
+"sources": ["Pager.scss"],
+"names": [],
+"file": "Pager.css"
+}

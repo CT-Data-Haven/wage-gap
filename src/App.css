@@ -1,14 +1,13 @@
 .App .padded-grid {
-    /*padding: 60px 0 280px 0;*/
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
+  padding-top: 60px;
+  padding-bottom: 110px; }
 .App .title {
-    margin-top: 60px;
-    margin-bottom: 140px;
-}
+  margin-top: 60px;
+  margin-bottom: 80px; }
+.App footer {
+  margin-top: 20px; }
+@media (max-width: 768px) {
+  .App {
+    font-size: 12px; } }
 
-#sticky {
-    
-}
+/*# sourceMappingURL=App.css.map */

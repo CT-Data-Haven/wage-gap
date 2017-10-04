@@ -1,32 +1,30 @@
 .Chart {
-    font-family: 'Fira Sans';
-}
+  font-family: 'Fira Sans';
+  font-size: 0.9em; }
+  @media (max-width: 768px) {
+    .Chart {
+      font-size: 0.8em; } }
+  @media (max-width: 768px) {
+    .Chart h3 {
+      font-size: 16px; } }
+  .Chart svg {
+    font-family: 'Fira Sans Condensed'; }
+    .Chart svg text.annotation {
+      transform: translate(0.1rem, -1.2rem);
+      font-weight: 600; }
+    .Chart svg text.annotation.annLeft {
+      text-anchor: start !important; }
+    .Chart svg text.annotation.annRight {
+      text-anchor: end !important; }
+    .Chart svg path.tick-line {
+      stroke: #ccc; }
+  .Chart div.chart-title {
+    height: 72px; }
+    .Chart div.chart-title h3, .Chart div.chart-title h4 {
+      font-weight: 300; }
+    .Chart div.chart-title .fat-skinny {
+      font-weight: 600;
+      font-size: 1.1em;
+      font-family: 'Fira Sans Condensed'; }
 
-.Chart svg {
-    font-family: 'Fira Sans Condensed';
-}
-
-.Chart text.annotation {
-    text-anchor: start !important;
-    transform: translate(0.2rem, -1.5rem);
-    font-weight: 600;
-}
-
-.Chart path.tick-line {
-    stroke: #ccc;
-}
-
-.Chart div.chart-title {
-    height: 72px;
-}
-
-.Chart .chart-title h3,
-.Chart .chart-title h4 {
-    font-weight: 300;
-}
-
-.Chart .chart-title .fat-skinny {
-    font-weight: 600;
-    font-size: 1.1em;
-    font-family: 'Fira Sans Condensed';
-}
+/*# sourceMappingURL=Chart.css.map */
