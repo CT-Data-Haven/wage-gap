@@ -1,5 +1,5 @@
 step,measure,x,y,z,label
-step1,ct vs us,US,30926,US, 
+step1,ct vs us,US,30926,US,
 step1,ct vs us,Connecticut,38324,Connecticut,"$7,398 more than US"
 step2,all workers by sex,US,36337,Men,
 step2,all workers by sex,US,25792,Women,$0.71
@@ -16,26 +16,26 @@ step3,all workers by sex and edu,Some college,33868,Women,$0.71
 step3,all workers by sex and edu,Bachelor's,48025,Women,$0.64
 step3,all workers by sex and edu,Graduate,65320,Women,$0.66
 step4,worker type,Men,0.672,Full-time,67% work full-time
-step4,worker type,Men,0.328,Part-time, 
+step4,worker type,Men,0.328,Part-time,
 step4,worker type,Women,0.535,Full-time,54%
-step4,worker type,Women,0.465,Part-time, 
+step4,worker type,Women,0.465,Part-time,
 step5,full time by sex,US,49450,Men,
 step5,full time by sex,US,39209,Women,$0.79
 step5,full time by sex,Connecticut,62071,Men,
 step5,full time by sex,Connecticut,50211,Women,$0.81
-step6,full-time income by occupation,"Management, business, financial",101549,Men,
+step6,full-time income by occupation,"Mgmt, business, financial",101549,Men,
 step6,full-time income by occupation,Healthcare,92729,Men,
-step6,full-time income by occupation,"Computer, engineering, science",86120,Men,
-step6,full-time income by occupation,"Education, legal, community service,...",73521,Men,
+step6,full-time income by occupation,"Computer, engin., science",86120,Men,
+step6,full-time income by occupation,"Edu., legal, comm. service,...",73521,Men,
 step6,full-time income by occupation,"Sales, office",56574,Men,
-step6,full-time income by occupation,"Production, moving, transportation",45667,Men,
+step6,full-time income by occupation,"Prod., moving, transport.",45667,Men,
 step6,full-time income by occupation,Service,40319,Men,
-step6,full-time income by occupation,"Management, business, financial",72348,Women,"$29,201 difference"
+step6,full-time income by occupation,"Mgmt, business, financial",72348,Women,"$29,201 gap"
 step6,full-time income by occupation,Healthcare,71209,Women,"$21,520"
-step6,full-time income by occupation,"Computer, engineering, science",75384,Women,"$10,736"
-step6,full-time income by occupation,"Education, legal, community service,...",57256,Women,"$16,265"
+step6,full-time income by occupation,"Computer, engin., science",75384,Women,"$10,736"
+step6,full-time income by occupation,"Edu., legal, comm. service,...",57256,Women,"$16,265"
 step6,full-time income by occupation,"Sales, office",42375,Women,"$14,199"
-step6,full-time income by occupation,"Production, moving, transportation",29472,Women,"$16,195"
+step6,full-time income by occupation,"Prod., moving, transport.",29472,Women,"$16,195"
 step6,full-time income by occupation,Service,30449,Women,"$9,870"
 step7,all workers by race and sex,All,45716,Men,
 step7,all workers by race and sex,All,31667,Women,$0.69
