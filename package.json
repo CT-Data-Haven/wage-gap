@@ -2,7 +2,7 @@
   "name": "scroll-sem",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://camille-s.github.io/wage-gap",
+  "homepage": "https://ct-data-haven.github.io/wage-gap",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "breakpoint-sass": "^2.7.1",
