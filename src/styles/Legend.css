@@ -1,9 +1,7 @@
 .Legend {
     height: 40px;
-	color: #222;
 }
 
 .Legend .legendCells text {
-    /*font-size: 90%;*/
-    font-size: 110%;
+    font-size: 90%;
 }

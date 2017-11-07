@@ -5,64 +5,81 @@ import { ORFrame } from 'semiotic';
 import Legend from './Legend';
 import '../styles/Chart.css';
 
-let margin = { left: 80, top: 30, bottom: 40, right: 60 };
-
 export default class Chart extends React.Component {
+    
+    makeColorScale(colortype) {
+        let domain = this.props.style[colortype].labels;
+        let range = this.props.style[colortype].colors;
+        let hasLegend = this.props.style[colortype].hasLegend;
+        let color = d3.scaleOrdinal()
+            // .domain(d3.map((d) => d.x))
+            .domain(domain)
+            .range(range);
+        return [ color, hasLegend ];
+    }
+
+
+
     render() {
         // meta
-		let meta = this.props.meta;
-		let data = this.props.data;
-        console.log(meta);
-        console.log(data);
-        let color = this.props.color;
+        let meta = this.props.meta;
+        meta.left = +meta.left;
+        meta.ticks = +meta.ticks;
+
+        let [ color, hasLegend ] = this.makeColorScale(meta.color);
+        let type = meta.bartype === 'point' ? { type: 'point', r: 8 } : meta.bartype;
+        let direction = meta.direction;
+        let orientation = meta.direction === 'vertical' ? 'left' : 'bottom';
 
         let formStr = meta.format === 'dollar' ? '$.2s' : '.0%';
         let format = d3.format(formStr);
-        // let direction = meta.projection === 'vertical' ? 'left' : 'bottom';
 
-        let axis = {
-            // orient: direction,
-            tickFormat: d => format(d),
-			ticks: meta.ticks || 5
-        };
-
-        let max = meta.fill ? '1.0' : d3.max(data, d => d.y);
-        let type = meta.bartype !== 'pie' ? meta.bartype : { type: 'bar', innerRadius: 50 };
-        let colorExtent = _.chain(data)
-            .pluck('color')
-            .uniq()
+        let annotations = _.chain(this.props.data)
+            .filter((d) => d.label.length > 0)
+            .each((d) => {
+                d.type = 'or';
+                d.className = meta.annClass;
+            })
             .value();
 
-        margin.left = meta.left;
 
-        let isPie = meta.bartype === 'pie';
-        let size = !isPie ? this.props.size : [this.props.size[1], this.props.size[1]];
-        let dynamic = isPie ? 'y' : null;
+        let axis = {
+            orient: orientation,
+            tickFormat: d => format(d),
+            ticks: meta.ticks
+        };
+
+        let max = meta.max === 'fill' ? 1.0 : d3.max(this.props.data, d => d.y);
+
+        let margin = this.props.style.margin;
+        margin.left = meta.left;
 
         return (
             <div className="Chart">
                 <div className="chart-title">
-                    <h3>{this.props.text.titles.chartH1}</h3>
-                    <h5 className="fat-skinny">{this.props.text.titles.chartH3}</h5>
+                    <h3>{this.props.titles.chartH1}</h3>
+                    <h5 className="fat-skinny">{this.props.titles.chartH3}</h5>
                 </div>
                 <ORFrame
-                    size={size}
-                    data={data}
+                    size={this.props.size}
+                    responsiveWidth={true}
+                    responsiveHeight={true}
+                    data={this.props.data}
                     type={type}
-                    projection={meta.projection}
-                    oPadding={!isPie ? 20 : 0}
+                    projection={direction}
+                    oPadding={20}
                     oAccessor={'x'}
-                    rAccessor={!isPie ? 'y' : null}
+                    rAccessor={'y'}
                     rExtent={[0, max]}
                     style={ d => { return { fill: color(d.z) }} }
-                    dynamicColumnWidth={dynamic}
 
                     margin={margin}
                     oLabel={true}
-                    axis={!isPie ? axis : null}
+                    axis={axis}
+                    annotations={annotations}
 
                 />
-                <Legend color={color} hasLegend={meta.hasLegend} extent={colorExtent} />
+                <Legend color={color} hasLegend={hasLegend} />
             </div>
         );
     }

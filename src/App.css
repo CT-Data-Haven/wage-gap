@@ -1,31 +1,13 @@
+.App .padded-grid {
+  padding-top: 60px;
+  padding-bottom: 110px; }
+.App .title {
+  margin-top: 60px;
+  margin-bottom: 80px; }
 .App footer {
-	font-size: 2em;
-	margin: 400px 0;
-	font-weight: 300;
-}
+  margin-top: 20px; }
+@media (max-width: 768px) {
+  .App {
+    font-size: 12px; } }
 
-.App footer h2 {
-	font-size: 2em;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-.App h1 {
-	font-size: 4.5em;
-	font-weight: 600;
-	margin: 200px 0 600px 0;
-}
-
-.App #textContainer {
-	padding-top: 60px;
-}
-
-#logo {
-	position: fixed;
-	left: 10px;
-	bottom: 10px;
-	background-image: url('./25th-logo.png');
-	background-size: 282px;
-	width: 282px;
-	height: 100px;
-}
+/*# sourceMappingURL=App.css.map */
