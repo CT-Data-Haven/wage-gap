@@ -1,11 +1,11 @@
 .Text {
-    height: 150px;
+    min-height: 150px;
     /*font-size: 1.1em;*/
 }
 
-@media (min-width: 720px) {
+@media (min-width: 724px) {
     .Text {
-        height: 350px;
+        min-height: 350px;
     }
 
     .Text .text-block {
@@ -14,11 +14,11 @@
 }
 
 .Text h2 {
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .Text h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #C6447E;
 }

@@ -1,5 +1,5 @@
 @import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
-$smallScreen: max-width 720px;
+$smallScreen: max-width 724px;
 
 .Chart {
     font-family: 'Fira Sans';
@@ -47,7 +47,7 @@ $smallScreen: max-width 720px;
     }
 
     div.chart-title {
-        height: 50px;
+        min-height: 50px;
 
         h3, h4 {
             font-weight: 300;

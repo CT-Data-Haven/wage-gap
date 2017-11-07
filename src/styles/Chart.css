@@ -1,12 +1,12 @@
 .Chart {
   font-family: 'Fira Sans';
   font-size: 0.9em; }
-  @media (max-width: 720px) {
+  @media (max-width: 724px) {
     .Chart {
       font-size: 0.8em; } }
   .Chart h3 {
     font-size: 20px; }
-    @media (max-width: 720px) {
+    @media (max-width: 724px) {
       .Chart h3 {
         font-size: 16px; } }
   .Chart svg {
@@ -22,7 +22,7 @@
     .Chart svg path.tick-line {
       stroke: #ccc; }
   .Chart div.chart-title {
-    height: 50px; }
+    min-height: 50px; }
     .Chart div.chart-title h3, .Chart div.chart-title h4 {
       font-weight: 300; }
     .Chart div.chart-title .fat-skinny {
