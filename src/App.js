@@ -115,6 +115,7 @@ class App extends Component {
                         <Col sm={12}>
                             <footer>
                                 <p>Source: DataHaven analysis (2017) of US Census Bureau American Community Survey 2015 5-year estimates. <a href="http://www.ctdatahaven.org/">ctdatahaven.org</a></p>
+                                <p><a href="https://github.com/CT-Data-Haven/wage-gap/blob/master/wage_gap_download.csv" target="_blank">DOWNLOAD THE DATA</a></p>
                             </footer>
                         </Col>
                     </Row>
