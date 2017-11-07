@@ -26,11 +26,11 @@ $smallScreen: max-width 768px;
             font-weight: 600;
         }
 
-        text.annotation.annLeft {
+        text.annotation.text-left {
             text-anchor: start !important;
         }
 
-        text.annotation.annRight {
+        text.annotation.text-right {
             text-anchor: end !important;
         }
 

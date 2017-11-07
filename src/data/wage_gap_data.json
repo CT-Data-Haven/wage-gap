@@ -1,0 +1,438 @@
+[{
+    "step": "1",
+    "measure": "ct vs us",
+    "x": "US",
+    "y": 30926,
+    "z": "US"
+}, {
+    "step": "1",
+    "measure": "ct vs us",
+    "x": "Connecticut",
+    "y": 38324,
+    "z": "Connecticut",
+    "label": "$7,398 more than US"
+}, {
+    "step": "2",
+    "measure": "all workers by sex",
+    "x": "US",
+    "y": 36337,
+    "z": "Men"
+}, {
+    "step": "2",
+    "measure": "all workers by sex",
+    "x": "US",
+    "y": 25792,
+    "z": "Women",
+    "label": "$0.71"
+}, {
+    "step": "2",
+    "measure": "all workers by sex",
+    "x": "Connecticut",
+    "y": 45716,
+    "z": "Men"
+}, {
+    "step": "2",
+    "measure": "all workers by sex",
+    "x": "Connecticut",
+    "y": 31667,
+    "z": "Women",
+    "label": "$0.69"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "No diploma",
+    "y": 26492,
+    "z": "Men"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "High school",
+    "y": 40996,
+    "z": "Men"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "Some college",
+    "y": 47946,
+    "z": "Men"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "Bachelor's",
+    "y": 75320,
+    "z": "Men"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "Graduate",
+    "y": 99133,
+    "z": "Men"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "No diploma",
+    "y": 18450,
+    "z": "Women",
+    "label": "$0.70"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "High school",
+    "y": 26899,
+    "z": "Women",
+    "label": "$0.66"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "Some college",
+    "y": 33868,
+    "z": "Women",
+    "label": "$0.71"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "Bachelor's",
+    "y": 48025,
+    "z": "Women",
+    "label": "$0.64"
+}, {
+    "step": "3",
+    "measure": "all workers by sex and edu",
+    "x": "Graduate",
+    "y": 65320,
+    "z": "Women",
+    "label": "$0.66"
+}, {
+    "step": "4",
+    "measure": "worker type",
+    "x": "Men",
+    "y": 0.672,
+    "z": "Full-time",
+    "label": "67% work full-time"
+}, {
+    "step": "4",
+    "measure": "worker type",
+    "x": "Men",
+    "y": 0.328,
+    "z": "Part-time"
+}, {
+    "step": "4",
+    "measure": "worker type",
+    "x": "Women",
+    "y": 0.535,
+    "z": "Full-time",
+    "label": "54%"
+}, {
+    "step": "4",
+    "measure": "worker type",
+    "x": "Women",
+    "y": 0.465,
+    "z": "Part-time"
+}, {
+    "step": "5",
+    "measure": "full time by sex",
+    "x": "US",
+    "y": 49450,
+    "z": "Men"
+}, {
+    "step": "5",
+    "measure": "full time by sex",
+    "x": "US",
+    "y": 39209,
+    "z": "Women",
+    "label": "$0.79"
+}, {
+    "step": "5",
+    "measure": "full time by sex",
+    "x": "Connecticut",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "5",
+    "measure": "full time by sex",
+    "x": "Connecticut",
+    "y": 50211,
+    "z": "Women",
+    "label": "$0.81"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Management, business, financial",
+    "y": 101549,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Healthcare",
+    "y": 92729,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Computer, engineering, science",
+    "y": 86120,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Education, legal, community service,...",
+    "y": 73521,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Sales, office",
+    "y": 56574,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Production, moving, transportation",
+    "y": 45667,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Service",
+    "y": 40319,
+    "z": "Men"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Management, business, financial",
+    "y": 72348,
+    "z": "Women",
+    "label": "$29,201 difference"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Healthcare",
+    "y": 71209,
+    "z": "Women",
+    "label": "$21,520"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Computer, engineering, science",
+    "y": 75384,
+    "z": "Women",
+    "label": "$10,736"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Education, legal, community service,...",
+    "y": 57256,
+    "z": "Women",
+    "label": "$16,265"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Sales, office",
+    "y": 42375,
+    "z": "Women",
+    "label": "$14,199"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Production, moving, transportation",
+    "y": 29472,
+    "z": "Women",
+    "label": "$16,195"
+}, {
+    "step": "6",
+    "measure": "full-time income by occupation",
+    "x": "Service",
+    "y": 30449,
+    "z": "Women",
+    "label": "$9,870"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "All",
+    "y": 45716,
+    "z": "Men"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "All",
+    "y": 31667,
+    "z": "Women",
+    "label": "$0.69"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "White",
+    "y": 52371,
+    "z": "Men"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "White",
+    "y": 35654,
+    "z": "Women",
+    "label": "$0.78"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "Asian",
+    "y": 57433,
+    "z": "Men"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "Asian",
+    "y": 34696,
+    "z": "Women",
+    "label": "$0.76"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "Black",
+    "y": 30131,
+    "z": "Men"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "Black",
+    "y": 28264,
+    "z": "Women",
+    "label": "$0.62"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "Latinx",
+    "y": 26903,
+    "z": "Men"
+}, {
+    "step": "7",
+    "measure": "all workers by race and sex",
+    "x": "Latinx",
+    "y": 20789,
+    "z": "Women",
+    "label": "$0.45"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "All",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "All",
+    "y": 50211,
+    "z": "Women",
+    "label": "$0.81"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "White",
+    "y": 69740,
+    "z": "Men"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "White",
+    "y": 53934,
+    "z": "Women",
+    "label": "$0.87"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "Asian",
+    "y": 72450,
+    "z": "Men"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "Asian",
+    "y": 55957,
+    "z": "Women",
+    "label": "$0.90"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "Black",
+    "y": 44049,
+    "z": "Men"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "Black",
+    "y": 40723,
+    "z": "Women",
+    "label": "$0.66"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "Latinx",
+    "y": 36853,
+    "z": "Men"
+}, {
+    "step": "8",
+    "measure": "full time by race and sex",
+    "x": "Latinx",
+    "y": 32815,
+    "z": "Women",
+    "label": "$0.53"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "All",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "All",
+    "y": 62071,
+    "z": "Women"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "White",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "White",
+    "y": 62071,
+    "z": "Women"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "Asian",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "Asian",
+    "y": 62071,
+    "z": "Women"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "Black",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "Black",
+    "y": 62071,
+    "z": "Women"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "Latinx",
+    "y": 62071,
+    "z": "Men"
+}, {
+    "step": "9",
+    "measure": "wage equality",
+    "x": "Latinx",
+    "y": 62071,
+    "z": "Women"
+}]

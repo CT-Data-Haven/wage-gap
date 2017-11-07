@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as _ from 'underscore';
+import { nest, scaleOrdinal } from 'd3';
 import { Grid, Row, Col } from 'react-bootstrap';
-// import { Affix, AutoAffix} from 'react-overlays';
 import ReactResizeDetector from 'react-resize-detector';
 
 import Text from './components/Text';
@@ -10,6 +10,25 @@ import Pager from './components/Pager';
 
 import './App.css';
 
+const initData = require('./data/wage_gap_data.json');
+const meta = require('./data/wage_gap_meta.json');
+const text = require('./data/wage_gap_text.json');
+
+const colorTypes = {
+	colorByLoc: {
+		domain: [ 'US', 'Connecticut' ],
+		range: [ '#495B7A', '#25A89D' ]
+	},
+	colorBySex: {
+		domain: [ 'Men', 'Women' ],
+		range: [ '#2555a8', '#d83a7c' ]
+	},
+	colorByType: {
+		domain: [ 'Full-time', 'Part-time' ],
+		range: [ '#25a89d', '#78d7a3' ]
+	}
+};
+
 
 class App extends Component {
     constructor() {
@@ -17,11 +36,26 @@ class App extends Component {
         this.state = {
             step: 0,
             // default size
-            width: 600,
-            height: 400
+            width: 500,
+            height: 400,
+			data: []
         };
         this.onResize = this.onResize.bind(this);
+		this.onPageChange = this.onPageChange.bind(this);
     }
+
+	componentWillMount() {
+		let clean = initData;
+		clean.forEach((d) => d.y = +d.y);
+		this.split = nest()
+			.key((d) => d.step)
+			.entries(clean);
+		this.meta = meta;
+        this.text = text;
+		this.setState({
+			data: this.split[0].values
+		});
+	}
 
     onResize = (w, h) => {
         let width = Math.round(0.9 * w);
@@ -34,16 +68,21 @@ class App extends Component {
     };
 
     onPageChange = (e) => {
+		let step = e - 1;
+		let data = this.split[step].values;
         this.setState({
-            step: e - 1
+            step: step,
+			data: data
         });
     };
 
     render() {
         let step = this.state.step;
-
-        let text = _.pluck(this.props.json, 'md');
-        let titles = _.pluck(this.props.json, 'titles');
+		let colorType = colorTypes[this.meta[step].color];
+		let color = scaleOrdinal()
+			.domain(colorType.domain)
+			.range(colorType.range);
+		let data = this.state.data;
 
         return (
             <div className="App">
@@ -51,21 +90,22 @@ class App extends Component {
                     <h1 className="title">The many wage gaps in Connecticut</h1>
                     <Row>
                         <Col sm={6} md={4}>
-                            <Text text={text[step]} />
+                            <Text text={this.text[step].md} />
                             <Pager
                                 onPageChange={this.onPageChange}
-                                items={text.length}
+                                items={this.split.length}
                                 activePage={step + 1}
                             />
                         </Col>
                         <Col sm={6} md={8}>
 
                             <Chart
-                                data={this.props.data[step].values}
-                                meta={this.props.meta[step]}
-                                style={this.props.style}
-                                titles={titles[step]}
+                                data={data}
+                                meta={this.meta[step]}
+                                // style={this.props.style}
+                                titles={this.text[step].titles}
                                 size={[ this.state.width, this.state.height ]}
+								color={color}
                             />
 
                             <ReactResizeDetector handleWidth handleHeight onResize={this.onResize} />

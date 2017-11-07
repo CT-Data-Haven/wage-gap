@@ -5,28 +5,17 @@ import { ORFrame } from 'semiotic';
 import Legend from './Legend';
 import '../styles/Chart.css';
 
+let margin = { left: 60, top: 15, bottom: 30, right: 15 };
+
 export default class Chart extends React.Component {
-    
-    makeColorScale(colortype) {
-        let domain = this.props.style[colortype].labels;
-        let range = this.props.style[colortype].colors;
-        let hasLegend = this.props.style[colortype].hasLegend;
-        let color = d3.scaleOrdinal()
-            // .domain(d3.map((d) => d.x))
-            .domain(domain)
-            .range(range);
-        return [ color, hasLegend ];
-    }
-
-
 
     render() {
         // meta
         let meta = this.props.meta;
-        meta.left = +meta.left;
+        margin.left = +meta.left;
         meta.ticks = +meta.ticks;
 
-        let [ color, hasLegend ] = this.makeColorScale(meta.color);
+		let color = this.props.color;
         let type = meta.bartype === 'point' ? { type: 'point', r: 8 } : meta.bartype;
         let direction = meta.direction;
         let orientation = meta.direction === 'vertical' ? 'left' : 'bottom';
@@ -35,7 +24,7 @@ export default class Chart extends React.Component {
         let format = d3.format(formStr);
 
         let annotations = _.chain(this.props.data)
-            .filter((d) => d.label.length > 0)
+            .filter((d) => d.label && d.label.length > 0)
             .each((d) => {
                 d.type = 'or';
                 d.className = meta.annClass;
@@ -50,9 +39,6 @@ export default class Chart extends React.Component {
         };
 
         let max = meta.max === 'fill' ? 1.0 : d3.max(this.props.data, d => d.y);
-
-        let margin = this.props.style.margin;
-        margin.left = meta.left;
 
         return (
             <div className="Chart">
@@ -79,7 +65,7 @@ export default class Chart extends React.Component {
                     annotations={annotations}
 
                 />
-                <Legend color={color} hasLegend={hasLegend} />
+                <Legend color={color} hasLegend={this.props.meta.hasLegend} />
             </div>
         );
     }
