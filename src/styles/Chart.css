@@ -11,7 +11,7 @@
         font-size: 16px; } }
   .Chart svg {
     font-family: 'Fira Sans Condensed';
-    font-size: 0.9em; }
+    font-size: 11px; }
     .Chart svg text.annotation {
       transform: translate(0.1rem, -1.2rem);
       font-weight: 600; }
@@ -27,7 +27,6 @@
       font-weight: 300; }
     .Chart div.chart-title .fat-skinny {
       font-weight: 600;
-      font-size: 1.1em;
       font-family: 'Fira Sans Condensed'; }
 
 /*# sourceMappingURL=Chart.css.map */

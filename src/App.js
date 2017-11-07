@@ -58,7 +58,7 @@ class App extends Component {
 
     onResize = (w, h) => {
         let width = Math.round(0.9 * w);
-        let height = Math.round(width * 2/3);
+        let height = Math.round(width * 0.55);
 
         this.setState({
             width: width,

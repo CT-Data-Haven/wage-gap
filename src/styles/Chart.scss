@@ -21,7 +21,7 @@ $smallScreen: max-width 720px;
 
     svg {
         font-family: 'Fira Sans Condensed';
-        font-size: 0.9em;
+        font-size: 11px;
 
         text.annotation {
             // text-anchor: start !important;
@@ -55,7 +55,7 @@ $smallScreen: max-width 720px;
 
         .fat-skinny {
             font-weight: 600;
-            font-size: 1.1em;
+            // font-size: 1.1em;
             font-family: 'Fira Sans Condensed';
         }
     }

@@ -1,27 +1,31 @@
 .Text {
-  min-height: 180px; }
-  @media (min-width: 768px) {
-    .Text {
-      height: 300px; } }
-  .Text .text-block {
-    padding: 200px 0;
-    /*border: 1px solid #999;*/
-    /*margin: 4px;*/
-    color: #444;
-    font-weight: 400; }
-  .Text h2, .Text h4 {
-    font-weight: 700;
-    color: #222;
-    font-size: 1.4em; }
-    @media (min-width: 768px) {
-      .Text h2, .Text h4 {
-        font-size: 1.6em; } }
-  .Text h3 {
-    font-weight: 200;
-    color: #8c578c;
-    font-size: 1.4em; }
-    @media (min-width: 768px) {
-      .Text h3 {
-        font-size: 1.6em; } }
+    height: 200px;
+    /*font-size: 1.1em;*/
+}
 
-/*# sourceMappingURL=Text.css.map */
+@media (min-width: 720px) {
+    .Text {
+        height: 350px;
+    }
+
+    .Text .text-block {
+        font-size: 1.0em;
+    }
+}
+
+.Text h2 {
+    font-size: 24px;
+}
+
+.Text h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #C6447E;
+}
+
+.Text .text-block {
+    padding-top: 20px;
+    font-size: 1.3em;
+    color: #444;
+    font-weight: 300;
+}
