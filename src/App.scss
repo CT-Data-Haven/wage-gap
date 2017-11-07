@@ -1,16 +1,18 @@
 @import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,400,700|Fira+Sans+Condensed:400,600');
+
 $smallScreen: max-width 720px;
 $bigScreen: 768px;
 
 .App {
     .padded-grid {
-        padding-top: 60px;
-        padding-bottom: 110px;
+        // padding-top: 60px;
+        // padding-bottom: 110px;
     }
 
     .title {
-        margin-top: 60px;
-        margin-bottom: 80px;
+        // margin-top: 60px;
+        // margin-bottom: 80px;
     }
 
     footer {
@@ -20,4 +22,8 @@ $bigScreen: 768px;
     @include breakpoint($smallScreen) {
         font-size: 12px;
     }
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }

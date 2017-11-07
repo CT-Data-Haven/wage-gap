@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import * as _ from 'underscore';
 import { nest, scaleOrdinal } from 'd3';
 import { Grid, Row, Col } from 'react-bootstrap';
 import ReactResizeDetector from 'react-resize-detector';

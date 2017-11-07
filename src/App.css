@@ -1,13 +1,12 @@
-.App .padded-grid {
-  padding-top: 60px;
-  padding-bottom: 110px; }
-.App .title {
-  margin-top: 60px;
-  margin-bottom: 80px; }
-.App footer {
-  margin-top: 20px; }
-@media (max-width: 720px) {
-  .App {
-    font-size: 12px; } }
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,400,700|Fira+Sans+Condensed:400,600");
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif; }
+  .App footer {
+    margin-top: 20px; }
+  @media (max-width: 720px) {
+    .App {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=App.css.map */
