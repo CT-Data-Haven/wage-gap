@@ -1,30 +1,35 @@
 .Chart {
-  font-family: 'Fira Sans';
-  font-size: 0.9em; }
-  @media (max-width: 768px) {
-    .Chart {
-      font-size: 0.8em; } }
-  @media (max-width: 768px) {
-    .Chart h3 {
-      font-size: 16px; } }
-  .Chart svg {
-    font-family: 'Fira Sans Condensed'; }
-    .Chart svg text.annotation {
-      transform: translate(0.1rem, -1.2rem);
-      font-weight: 600; }
-    .Chart svg text.annotation.annLeft {
-      text-anchor: start !important; }
-    .Chart svg text.annotation.annRight {
-      text-anchor: end !important; }
-    .Chart svg path.tick-line {
-      stroke: #ccc; }
-  .Chart div.chart-title {
-    height: 72px; }
-    .Chart div.chart-title h3, .Chart div.chart-title h4 {
-      font-weight: 300; }
-    .Chart div.chart-title .fat-skinny {
-      font-weight: 600;
-      font-size: 1.1em;
-      font-family: 'Fira Sans Condensed'; }
+    font-size: 1.35em;
+	/*margin-top: 20px;*/
+}
 
-/*# sourceMappingURL=Chart.css.map */
+.Chart svg {
+    font-family: 'Fira Sans Condensed';
+}
+
+.Chart svg text.annotation {
+    transform: translate(0.1rem, -1.2rem);
+    font-weight: 600;
+    text-anchor: start !important;
+}
+
+.Chart svg path.tick-line {
+    stroke: #ddd;
+}
+
+.Chart div.chart-title {
+    height: 100px;
+}
+
+.Chart div.chart-title h3 {
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #444;
+}
+
+.Chart .fat-skinny {
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed';
+    font-size: 1.4em;
+    color: #555;
+}

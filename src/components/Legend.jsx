@@ -15,14 +15,14 @@ export default class Legend extends React.Component {
 
     drawLegend() {
         let legend = legendColor()
-            .shapeWidth(30)
+            .shapeWidth(60)
             .orient('horizontal')
             .labelAlign('start')
-            .shapePadding(12)
+            .shapePadding(20)
             .scale(this.props.color);
 
         d3.select(this.refs.svg)
-            .attr('transform', 'translate(30, 0)')
+            .attr('transform', 'translate(80, 0)')
             .select('g')
             .attr('transform', 'translate(20, 0)')
             .call(legend)

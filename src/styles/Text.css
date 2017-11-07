@@ -1,27 +1,20 @@
 .Text {
-  min-height: 180px; }
-  @media (min-width: 768px) {
-    .Text {
-      height: 300px; } }
-  .Text .text-block {
-    padding: 200px 0;
-    /*border: 1px solid #999;*/
-    /*margin: 4px;*/
-    color: #444;
-    font-weight: 400; }
-  .Text h2, .Text h4 {
-    font-weight: 700;
-    color: #222;
-    font-size: 1.4em; }
-    @media (min-width: 768px) {
-      .Text h2, .Text h4 {
-        font-size: 1.6em; } }
-  .Text h3 {
-    font-weight: 200;
-    color: #8c578c;
-    font-size: 1.4em; }
-    @media (min-width: 768px) {
-      .Text h3 {
-        font-size: 1.6em; } }
+    height: 300px;
+    /*margin-top: 100px;*/
+    font-size: 2em;
+}
 
-/*# sourceMappingURL=Text.css.map */
+.Text .text-block {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 300;
+    /*font-size: 1.5em;*/
+    font-size: 1.1em;
+}
+
+.Text h2 {
+    font-weight: 700;
+    color: #292929;
+    font-size: 1.4em;
+    font-family: 'Fira Sans Condensed';
+}

@@ -1,0 +1,65 @@
+[{
+        "titles": {
+            "chartH1": "Median annual income",
+            "chartH3": "US and Connecticut, 2015"
+        },
+		"textHead" : "Workers in Connecticut are paid better than in the rest of the country",
+		"text": "Yet Connecticut is far from having income equity."
+    },
+	{
+		"titles": {
+			"chartH1": "Median annual income by sex",
+			"chartH3": "Connecticut, 2015"
+		},
+		"textHead": "Women in Connecticut make 69 cents on the male dollar",
+		"text": "Even though women and men in Connecticut have higher average pay than the US, we have about the same wage gap."
+	},
+    {
+        "titles": {
+            "chartH1": "Median annual income by sex & education",
+            "chartH3": "Connecticut, 2015"
+        },
+		"textHead": "Education alone doesn't close the wage gap",
+		"text": "Instead, the wage gap carries across education levels."
+    },
+    {
+        "titles": {
+            "chartH1": "Part-time vs full-time workers by sex",
+            "chartH3": "Connecticut, 2015"
+        },
+		"textHead": "Only 54% of working women work full-time",
+		"text": "Women are less likely to work full-time, and part-time workers tend to earn much less money than full-time workers. But that doesn't explain everything."
+    },
+    {
+        "titles": {
+            "chartH1": "Median annual income among full-time workers by sex",
+            "chartH3": "Connecticut, 2015"
+        },
+		"textHead": "Women working full-time earn 81 cents on the full-time male dollar",
+		"text": "Among full-time workers, the gap between women's and men's pay is smaller, but still persistent."
+    },
+    {
+        "titles": {
+            "chartH1": "Median annual income among full-time workers by sex & occupation",
+            "chartH3": "Connecticut, 2015"
+        },
+		"textHead": "Even within the same occupation type, women are paid less",
+		"text": "Women are paid less in both high-salary occupations like management and finance, and low paying ones like service."
+    },
+    {
+        "titles": {
+            "chartH1": "Median annual income by sex & race, full-time workers",
+            "chartH3": "Connecticut, 2015"
+        },
+		"textHead": "The wage gap isn't just men versus women",
+		"text": "Latinas working full-time only make 53 cents on the male dollar, while white and Asian women actually make more than Black or Latino men."
+    },
+    {
+        "titles": {
+            "chartH1": "How could we achieve pay equity?",
+            "chartH3": ""
+        },
+		"textHead": "Data shows the wage gap isn't as simple as we thought",
+		"text": "Breaking down data on Connecticut wages helps us see that there isn't just one wage gap, but many ways that pay inequality shows up."
+    }
+]

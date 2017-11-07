@@ -5,81 +5,64 @@ import { ORFrame } from 'semiotic';
 import Legend from './Legend';
 import '../styles/Chart.css';
 
+let margin = { left: 80, top: 30, bottom: 40, right: 60 };
+
 export default class Chart extends React.Component {
-    
-    makeColorScale(colortype) {
-        let domain = this.props.style[colortype].labels;
-        let range = this.props.style[colortype].colors;
-        let hasLegend = this.props.style[colortype].hasLegend;
-        let color = d3.scaleOrdinal()
-            // .domain(d3.map((d) => d.x))
-            .domain(domain)
-            .range(range);
-        return [ color, hasLegend ];
-    }
-
-
-
     render() {
         // meta
-        let meta = this.props.meta;
-        meta.left = +meta.left;
-        meta.ticks = +meta.ticks;
-
-        let [ color, hasLegend ] = this.makeColorScale(meta.color);
-        let type = meta.bartype === 'point' ? { type: 'point', r: 8 } : meta.bartype;
-        let direction = meta.direction;
-        let orientation = meta.direction === 'vertical' ? 'left' : 'bottom';
+		let meta = this.props.meta;
+		let data = this.props.data;
+        console.log(meta);
+        console.log(data);
+        let color = this.props.color;
 
         let formStr = meta.format === 'dollar' ? '$.2s' : '.0%';
         let format = d3.format(formStr);
-
-        let annotations = _.chain(this.props.data)
-            .filter((d) => d.label.length > 0)
-            .each((d) => {
-                d.type = 'or';
-                d.className = meta.annClass;
-            })
-            .value();
-
+        // let direction = meta.projection === 'vertical' ? 'left' : 'bottom';
 
         let axis = {
-            orient: orientation,
+            // orient: direction,
             tickFormat: d => format(d),
-            ticks: meta.ticks
+			ticks: meta.ticks || 5
         };
 
-        let max = meta.max === 'fill' ? 1.0 : d3.max(this.props.data, d => d.y);
+        let max = meta.fill ? '1.0' : d3.max(data, d => d.y);
+        let type = meta.bartype !== 'pie' ? meta.bartype : { type: 'bar', innerRadius: 50 };
+        let colorExtent = _.chain(data)
+            .pluck('color')
+            .uniq()
+            .value();
 
-        let margin = this.props.style.margin;
         margin.left = meta.left;
+
+        let isPie = meta.bartype === 'pie';
+        let size = !isPie ? this.props.size : [this.props.size[1], this.props.size[1]];
+        let dynamic = isPie ? 'y' : null;
 
         return (
             <div className="Chart">
                 <div className="chart-title">
-                    <h3>{this.props.titles.chartH1}</h3>
-                    <h5 className="fat-skinny">{this.props.titles.chartH3}</h5>
+                    <h3>{this.props.text.titles.chartH1}</h3>
+                    <h5 className="fat-skinny">{this.props.text.titles.chartH3}</h5>
                 </div>
                 <ORFrame
-                    size={this.props.size}
-                    responsiveWidth={true}
-                    responsiveHeight={true}
-                    data={this.props.data}
+                    size={size}
+                    data={data}
                     type={type}
-                    projection={direction}
-                    oPadding={20}
+                    projection={meta.projection}
+                    oPadding={!isPie ? 20 : 0}
                     oAccessor={'x'}
-                    rAccessor={'y'}
+                    rAccessor={!isPie ? 'y' : null}
                     rExtent={[0, max]}
                     style={ d => { return { fill: color(d.z) }} }
+                    dynamicColumnWidth={dynamic}
 
                     margin={margin}
                     oLabel={true}
-                    axis={axis}
-                    annotations={annotations}
+                    axis={!isPie ? axis : null}
 
                 />
-                <Legend color={color} hasLegend={hasLegend} />
+                <Legend color={color} hasLegend={meta.hasLegend} extent={colorExtent} />
             </div>
         );
     }

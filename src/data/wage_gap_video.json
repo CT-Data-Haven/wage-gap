@@ -1,0 +1,369 @@
+[{
+        "step": 1,
+        "measure": "all workers by location",
+        "x": "US",
+        "y": 30926,
+        "z": "US",
+        "label": null
+    },
+    {
+        "step": 1,
+        "measure": "all workers by location",
+        "x": "Connecticut",
+        "y": 38324,
+        "z": "Connecticut",
+        "label": null
+    },
+    {
+        "step": 2,
+        "measure": "workers by sex",
+        "x": "US",
+        "y": 36337,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 2,
+        "measure": "workers by sex",
+        "x": "US",
+        "y": 25792,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 2,
+        "measure": "workers by sex",
+        "x": "Connecticut",
+        "y": 45716,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 2,
+        "measure": "workers by sex",
+        "x": "Connecticut",
+        "y": 31667,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "No diploma",
+        "y": 26492,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "High school",
+        "y": 40996,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "Some college",
+        "y": 47946,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "Bachelor's",
+        "y": 75320,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "Graduate",
+        "y": 99133,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "No diploma",
+        "y": 18450,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "High school",
+        "y": 26899,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "Some college",
+        "y": 33868,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "Bachelor's",
+        "y": 48025,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 3,
+        "measure": "all workers by sex and edu",
+        "x": "Graduate",
+        "y": 65320,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 4,
+        "measure": "worker type",
+        "x": "Men",
+        "y": 0.672,
+        "z": "Full-time",
+        "label": null
+    },
+    {
+        "step": 4,
+        "measure": "worker type",
+        "x": "Men",
+        "y": 0.328,
+        "z": "Part-time",
+        "label": null
+    },
+    {
+        "step": 4,
+        "measure": "worker type",
+        "x": "Women",
+        "y": 0.535,
+        "z": "Full-time",
+        "label": null
+    },
+    {
+        "step": 4,
+        "measure": "worker type",
+        "x": "Women",
+        "y": 0.465,
+        "z": "Part-time",
+        "label": null
+    },
+    {
+        "step": 5,
+        "measure": "full time by sex",
+        "x": "US",
+        "y": 49450,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 5,
+        "measure": "full time by sex",
+        "x": "US",
+        "y": 39209,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 5,
+        "measure": "full time by sex",
+        "x": "Connecticut",
+        "y": 62071,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 5,
+        "measure": "full time by sex",
+        "x": "Connecticut",
+        "y": 50211,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 6,
+        "measure": "full-time income by occupation",
+        "x": "Mgmt, finance",
+        "y": 101549,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 6,
+        "measure": "full-time income by occupation",
+        "x": "Computer, engin.",
+        "y": 86120,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 6,
+        "measure": "full-time income by occupation",
+        "x": "Service",
+        "y": 40319,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 6,
+        "measure": "full-time income by occupation",
+        "x": "Mgmt, finance",
+        "y": 72348,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 6,
+        "measure": "full-time income by occupation",
+        "x": "Computer, engin.",
+        "y": 75384,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 6,
+        "measure": "full-time income by occupation",
+        "x": "Service",
+        "y": 30449,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "White",
+        "y": 69740,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "White",
+        "y": 53934,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "Asian",
+        "y": 72450,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "Asian",
+        "y": 55957,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "Black",
+        "y": 44049,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "Black",
+        "y": 40723,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "Latinx",
+        "y": 36853,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 7,
+        "measure": "full time by race and sex",
+        "x": "Latinx",
+        "y": 32815,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "White",
+        "y": 62071,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "White",
+        "y": 62071,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "Asian",
+        "y": 62071,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "Asian",
+        "y": 62071,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "Black",
+        "y": 62071,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "Black",
+        "y": 62071,
+        "z": "Women",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "Latinx",
+        "y": 62071,
+        "z": "Men",
+        "label": null
+    },
+    {
+        "step": 8,
+        "measure": "wage equality",
+        "x": "Latinx",
+        "y": 62071,
+        "z": "Women",
+        "label": null
+    }
+]

@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import * as _ from 'underscore';
 import '../styles/Text.css';
 
 const Text = (props) => {
+	let arr = props.text.text.split(';');
+	let blocks = _.map(arr, (d, i) => <p key={i}>{d}</p>);
     return (
         <div className="Text">
-            <ReactMarkdown source={props.text} />
+            <h2>{ props.text.textHead }</h2>
+            <div className="text-block">{ blocks }</div>
         </div>
     );
 };
