@@ -4,11 +4,14 @@
   @media (max-width: 720px) {
     .Chart {
       font-size: 0.8em; } }
-  @media (max-width: 720px) {
-    .Chart h3 {
-      font-size: 16px; } }
+  .Chart h3 {
+    font-size: 20px; }
+    @media (max-width: 720px) {
+      .Chart h3 {
+        font-size: 16px; } }
   .Chart svg {
-    font-family: 'Fira Sans Condensed'; }
+    font-family: 'Fira Sans Condensed';
+    font-size: 0.9em; }
     .Chart svg text.annotation {
       transform: translate(0.1rem, -1.2rem);
       font-weight: 600; }
@@ -19,7 +22,7 @@
     .Chart svg path.tick-line {
       stroke: #ccc; }
   .Chart div.chart-title {
-    height: 72px; }
+    height: 80px; }
     .Chart div.chart-title h3, .Chart div.chart-title h4 {
       font-weight: 300; }
     .Chart div.chart-title .fat-skinny {

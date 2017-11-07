@@ -15,10 +15,13 @@ $smallScreen: max-width 720px;
         @include breakpoint($smallScreen) {
             font-size: 16px;
         }
+
+        font-size: 20px;
     }
 
     svg {
         font-family: 'Fira Sans Condensed';
+        font-size: 0.9em;
 
         text.annotation {
             // text-anchor: start !important;
@@ -44,7 +47,7 @@ $smallScreen: max-width 720px;
     }
 
     div.chart-title {
-        height: 72px;
+        height: 80px;
 
         h3, h4 {
             font-weight: 300;

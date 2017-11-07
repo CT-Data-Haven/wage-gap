@@ -88,7 +88,7 @@ class App extends Component {
                 <Grid>
                     <h1 className="title">The many wage gaps in Connecticut</h1>
                     <Row>
-                        <Col sm={6} md={4}>
+                        <Col sm={5} md={4}>
                             <Text text={this.text[step].md} />
                             <Pager
                                 onPageChange={this.onPageChange}
@@ -96,7 +96,7 @@ class App extends Component {
                                 activePage={step + 1}
                             />
                         </Col>
-                        <Col sm={6} md={8}>
+                        <Col sm={7} md={8}>
 
                             <Chart
                                 data={data}

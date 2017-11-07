@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACQ,wGAAgG;AAKxG,IAAK;EAmBD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,uBAAuB;EAVpC,WAAO;IACH,UAAU,EAAE,IAAI;EC8CpB,yBAAwB;ID1D5B,IAAK;MAgBG,SAAS,EAAE,IAAI",
+"mappings": "AACQ,wGAAgG;AAKxG,IAAK;EAwBD,WAAW,EAAE,uBAAuB;EAbpC,WAAO;IACH,UAAU,EAAE,IAAI;EAGvB,eAAW;IACV,YAAY,EAAE,CAAC;IACf,aAAa,EAAE,CAAC;ECyCd,yBAAwB;ID1D5B,IAAK;MAqBG,SAAS,EAAE,IAAI",
 "sources": ["App.scss","../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss"],
 "names": [],
 "file": "App.css"

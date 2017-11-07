@@ -14,6 +14,7 @@ export default class Chart extends React.Component {
         let meta = this.props.meta;
         margin.left = +meta.left;
         meta.ticks = +meta.ticks;
+		console.log(meta);
 
 		let color = this.props.color;
         let type = meta.bartype === 'point' ? { type: 'point', r: 8 } : meta.bartype;
