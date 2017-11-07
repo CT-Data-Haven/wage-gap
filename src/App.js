@@ -88,10 +88,10 @@ class App extends Component {
                 <Grid>
                     <h1 className="title">The many wage gaps in Connecticut</h1>
                     <Row>
-                        <Col sm={5} md={4}>
+                        <Col sm={5} lg={4}>
                             <Text text={this.text[step].md} />
                         </Col>
-                        <Col sm={7} md={8}>
+                        <Col sm={7} lg={8}>
 
                             <Chart
                                 data={data}
