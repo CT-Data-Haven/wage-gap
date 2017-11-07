@@ -1,59 +1,59 @@
 step,measure,location,group,value,sex/worker type,year,unit,source
-1,median income by location,US,All,30926,All,2015,,2015 ACS
-1,median income by location,Connecticut,All,38324,All,2015,,2015 ACS
-2,median income by sex & location,US,All,36337,Men,2015,,2015 ACS
-2,median income by sex & location,US,All,25792,Women,2015,,2015 ACS
-2,median income by sex & location,Connecticut,All,45716,Men,2015,,2015 ACS
-2,median income by sex & location,Connecticut,All,31667,Women,2015,,2015 ACS
-3,median income by sex & education,Connecticut,No diploma,26492,Men,2015,,2015 ACS
-3,median income by sex & education,Connecticut,High school,40996,Men,2015,,2015 ACS
-3,median income by sex & education,Connecticut,Some college,47946,Men,2015,,2015 ACS
-3,median income by sex & education,Connecticut,Bachelor's,75320,Men,2015,,2015 ACS
-3,median income by sex & education,Connecticut,Graduate,99133,Men,2015,,2015 ACS
-3,median income by sex & education,Connecticut,No diploma,18450,Women,2015,,2015 ACS
-3,median income by sex & education,Connecticut,High school,26899,Women,2015,,2015 ACS
-3,median income by sex & education,Connecticut,Some college,33868,Women,2015,,2015 ACS
-3,median income by sex & education,Connecticut,Bachelor's,48025,Women,2015,,2015 ACS
-3,median income by sex & education,Connecticut,Graduate,65320,Women,2015,,2015 ACS
-4,type of worker by sex,Connecticut,Men,0.672,Full-time,2015,,2015 ACS
-4,type of worker by sex,Connecticut,Men,0.328,Part-time,2015,,2015 ACS
-4,type of worker by sex,Connecticut,Women,0.535,Full-time,2015,,2015 ACS
-4,type of worker by sex,Connecticut,Women,0.465,Part-time,2015,,2015 ACS
-5,median income by sex of full-time workers,US,All,49450,Men,2015,,2015 ACS
-5,median income by sex of full-time workers,US,All,39209,Women,2015,,2015 ACS
-5,median income by sex of full-time workers,Connecticut,All,62071,Men,2015,,2015 ACS
-5,median income by sex of full-time workers,Connecticut,All,50211,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Management, business, financial",101549,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,Healthcare,92729,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Computer, engineering, science",86120,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Education, legal, community service,...",73521,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Sales, office",56574,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Production, moving, transportation",45667,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,Service,40319,Men,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Management, business, financial",72348,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,Healthcare,71209,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Computer, engineering, science",75384,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Education, legal, community service,...",57256,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Sales, office",42375,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,"Production, moving, transportation",29472,Women,2015,,2015 ACS
-6,median income by sex & occupation of full-time workers,Connecticut,Service,30449,Women,2015,,2015 ACS
-7,median income by sex & race,Connecticut,All,45716,Men,2015,,2015 ACS
-7,median income by sex & race,Connecticut,All,31667,Women,2015,,2015 ACS
-7,median income by sex & race,Connecticut,White,52371,Men,2015,,2015 ACS
-7,median income by sex & race,Connecticut,White,35654,Women,2015,,2015 ACS
-7,median income by sex & race,Connecticut,Asian,57433,Men,2015,,2015 ACS
-7,median income by sex & race,Connecticut,Asian,34696,Women,2015,,2015 ACS
-7,median income by sex & race,Connecticut,Black,30131,Men,2015,,2015 ACS
-7,median income by sex & race,Connecticut,Black,28264,Women,2015,,2015 ACS
-7,median income by sex & race,Connecticut,Latinx,26903,Men,2015,,2015 ACS
-7,median income by sex & race,Connecticut,Latinx,20789,Women,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,All,62071,Men,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,All,50211,Women,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,White,69740,Men,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,White,53934,Women,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,Asian,72450,Men,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,Asian,55957,Women,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,Black,44049,Men,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,Black,40723,Women,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,Latinx,36853,Men,2015,,2015 ACS
-8,median income by sex & race of full-time workers,Connecticut,Latinx,32815,Women,2015,,2015 ACS
+1,median income by location,US,All,30926,All,2015,dollar,2015 ACS
+1,median income by location,Connecticut,All,38324,All,2015,dollar,2015 ACS
+2,median income by sex & location,US,All,36337,Men,2015,dollar,2015 ACS
+2,median income by sex & location,US,All,25792,Women,2015,dollar,2015 ACS
+2,median income by sex & location,Connecticut,All,45716,Men,2015,dollar,2015 ACS
+2,median income by sex & location,Connecticut,All,31667,Women,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,No diploma,26492,Men,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,High school,40996,Men,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,Some college,47946,Men,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,Bachelor's,75320,Men,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,Graduate,99133,Men,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,No diploma,18450,Women,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,High school,26899,Women,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,Some college,33868,Women,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,Bachelor's,48025,Women,2015,dollar,2015 ACS
+3,median income by sex & education,Connecticut,Graduate,65320,Women,2015,dollar,2015 ACS
+4,type of worker by sex,Connecticut,Men,0.672,Full-time,2015,percent,2015 ACS
+4,type of worker by sex,Connecticut,Men,0.328,Part-time,2015,percent,2015 ACS
+4,type of worker by sex,Connecticut,Women,0.535,Full-time,2015,percent,2015 ACS
+4,type of worker by sex,Connecticut,Women,0.465,Part-time,2015,percent,2015 ACS
+5,median income by sex of full-time workers,US,All,49450,Men,2015,dollar,2015 ACS
+5,median income by sex of full-time workers,US,All,39209,Women,2015,dollar,2015 ACS
+5,median income by sex of full-time workers,Connecticut,All,62071,Men,2015,dollar,2015 ACS
+5,median income by sex of full-time workers,Connecticut,All,50211,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Management, business, financial",101549,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,Healthcare,92729,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Computer, engineering, science",86120,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Education, legal, community service,...",73521,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Sales, office",56574,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Production, moving, transportation",45667,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,Service,40319,Men,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Management, business, financial",72348,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,Healthcare,71209,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Computer, engineering, science",75384,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Education, legal, community service,...",57256,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Sales, office",42375,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,"Production, moving, transportation",29472,Women,2015,dollar,2015 ACS
+6,median income by sex & occupation of full-time workers,Connecticut,Service,30449,Women,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,All,45716,Men,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,All,31667,Women,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,White,52371,Men,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,White,35654,Women,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,Asian,57433,Men,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,Asian,34696,Women,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,Black,30131,Men,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,Black,28264,Women,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,Latinx,26903,Men,2015,dollar,2015 ACS
+7,median income by sex & race,Connecticut,Latinx,20789,Women,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,All,62071,Men,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,All,50211,Women,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,White,69740,Men,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,White,53934,Women,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,Asian,72450,Men,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,Asian,55957,Women,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,Black,44049,Men,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,Black,40723,Women,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,Latinx,36853,Men,2015,dollar,2015 ACS
+8,median income by sex & race of full-time workers,Connecticut,Latinx,32815,Women,2015,dollar,2015 ACS
