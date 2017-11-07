@@ -1,10 +1,10 @@
 .Chart {
   font-family: 'Fira Sans';
   font-size: 0.9em; }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     .Chart {
       font-size: 0.8em; } }
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     .Chart h3 {
       font-size: 16px; } }
   .Chart svg {
