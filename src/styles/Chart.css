@@ -22,7 +22,7 @@
     .Chart svg path.tick-line {
       stroke: #ccc; }
   .Chart div.chart-title {
-    height: 80px; }
+    height: 50px; }
     .Chart div.chart-title h3, .Chart div.chart-title h4 {
       font-weight: 300; }
     .Chart div.chart-title .fat-skinny {

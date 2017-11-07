@@ -58,7 +58,7 @@ class App extends Component {
 
     onResize = (w, h) => {
         let width = Math.round(0.9 * w);
-        let height = Math.round(width * 0.55);
+        let height = Math.round(width * 0.6);
 
         this.setState({
             width: width,
@@ -90,11 +90,6 @@ class App extends Component {
                     <Row>
                         <Col sm={5} md={4}>
                             <Text text={this.text[step].md} />
-                            <Pager
-                                onPageChange={this.onPageChange}
-                                items={this.split.length}
-                                activePage={step + 1}
-                            />
                         </Col>
                         <Col sm={7} md={8}>
 
@@ -105,6 +100,12 @@ class App extends Component {
                                 titles={this.text[step].titles}
                                 size={[ this.state.width, this.state.height ]}
 								color={color}
+                            />
+
+                            <Pager
+                                onPageChange={this.onPageChange}
+                                items={this.split.length}
+                                activePage={step + 1}
                             />
 
                             <ReactResizeDetector handleWidth handleHeight onResize={this.onResize} />

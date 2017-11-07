@@ -54,7 +54,7 @@ export default class Chart extends React.Component {
                     data={this.props.data}
                     type={type}
                     projection={direction}
-                    oPadding={20}
+                    oPadding={30}
                     oAccessor={'x'}
                     rAccessor={'y'}
                     rExtent={[0, max]}
